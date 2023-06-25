@@ -1,0 +1,8 @@
+config {
+  type: "view", // Creates a view in BigQuery. Try changing to "table" instead.
+}
+
+select
+    *
+from
+    `bigquery-public-data.austin_bikeshare.bikeshare_trips`
