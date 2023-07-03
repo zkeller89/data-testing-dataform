@@ -2,7 +2,7 @@ config {
     type: 'view'
 }
 
-select 
+select
     id as product_id,
     cost,
     category,
