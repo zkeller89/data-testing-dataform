@@ -3,6 +3,19 @@ config {
 }
 
 select
-    *
+  station_id,
+  name,
+  status,
+  address,
+  alternate_name,
+  city_asset_number,
+  property_type,
+  number_of_docks,
+  power_type,
+  safe_cast(footprint_length as float64) as footprint_length,
+  footprint_width,
+  notes,
+  council_district,
+  modified_date,
 from
     `bigquery-public-data.austin_bikeshare.bikeshare_stations`

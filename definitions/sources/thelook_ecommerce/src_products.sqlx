@@ -1,0 +1,16 @@
+config {
+    type: 'view'
+}
+
+select 
+    id as product_id,
+    cost,
+    category,
+    name as product_name,
+    brand,
+    retail_price,
+    department,
+    sku,
+    distribution_center_id as dc_id,
+from
+    `bigquery-public-data.thelook_ecommerce.products`

@@ -1,0 +1,11 @@
+config {
+    type: 'view'
+}
+
+select
+    id as dc_id,
+    name as dc_name,
+    latitude,
+    longitude,
+from 
+    `bigquery-public-data.thelook_ecommerce.distribution_centers`
