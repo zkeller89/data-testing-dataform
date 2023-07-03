@@ -1,0 +1,16 @@
+config {
+    type: 'table'
+}
+
+select
+    product_id,
+    cost,
+    category,
+    product_name,
+    brand,
+    retail_price,
+    department,
+    sku,
+    dc_id,
+from
+    ${ ref('src_products') }
